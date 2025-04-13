@@ -5,20 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+        .tengah {
+            background-image: url('bg.jpeg');
+            background-size: cover;
+            background-position: center;
+            height: 660px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+            color: white;
+        }
+        .footer-container {
+            position:bottom;
+            width: 100%;
+            background-color: #0080ff;
+        }
+        .sosmed a {
+            margin-right: 15px;
+        }
+        .sosmed a:hover {
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg" style="background-color: #0074FF;">
         
         <div class="container-fluid" >
-            <div class="collapse navbar-collapse justify-content-begin" style="margin-left: 150px;">
-                <a class="navbar-brand d-flex align-items-center" href="#" >
-                    <img src="\pert7\logo.jpeg" alt="logo" width="30" height="30" class="me-2">
-                    <span style="color: white; font-size: 20px;">Logo</span>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>  
+            <a class="navbar-brand d-flex align-items-center" href="#" style="margin-left: 150px;">
+                <img src="\Tugaspert7\logo.jpeg" alt="logo" width="30" height="30" class="me-2">
+                <span style="color: white; font-size: 20px;">Logo</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent" style="margin-right: 150px;">
                 <ul class="navbar-nav mb-2 mb-lg-0">
@@ -37,29 +64,27 @@
     </nav>
 
     
-    <div class="container-fluid p-0" style="display: flex;", flex-direction: column;, align-items: center;, justify-content: center;, text-align: center;>
-        <div class="image-container position-relative"></div>
-            <img src="\pert7\bg.jpeg" alt="Full Width Image" class="img-fluid w-100" style="width: auto; height: auto;">
-            <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
-            <h1 class="fw-bold">Selamat Datang di Website Kami</h1>
-            <p class="fs-5">Ini adalah halaman latihan Bootstrap untuk Mahasigma</p>
-            <a href="\pert7\index.html" class="btn btn-primary btn-lg mt-3">Pelajari Lebih Lanjut</a>
-            </div>
+
+        <div class="tengah">  
+            <h1 class="fw-bold", font-size="4rem;">Selamat Datang di Website Kami</h1>
+            <p class="fs-5",font-size="1.5rem;">Ini adalah halaman latihan Bootstrap untuk Mahasigma</p>
+            <a href="#" class="btn btn-primary btn-lg mt-3">Pelajari Lebih Lanjut</a>        
         </div>
-            <div class="footer-container mt-3">
-                
-                <footer class="text-center py-3" style="background-color: #0080ff;">
-                    <p class="mb-0 text-white">Ikuti Kami di:</p>
-                    <br>
-                    <div class="sosmed">
-                        <a href="https://www.facebook.com/" target="_blank" class="text-white text-decoration-underline me-3">Facebook</a>
-                        <a href="https://x.com/" target="_blank" class="text-white text-decoration-underline me-3">Twitter</a>
-                        <a href="https://www.instagram.com/" target="_blank" class="text-white text-decoration-underline">Instagram</a>
+  
+                <footer class="bg-primary text-white text-center py-4 mt-auto" style="background-color: #0080ff; position: fixed; bottom: 0; width: 100%;">
+                    <div class="container">
+                        <p class="mb-0 text-white">Ikuti Kami di:</p>
+                        <br>
+                        <p>
+                            <a href="https://www.facebook.com/" target="_blank" class="text-white text-decoration-underline me-3">Facebook</a>
+                            <a href="https://x.com/" target="_blank" class="text-white text-decoration-underline me-3">Twitter</a>
+                            <a href="https://www.instagram.com/" target="_blank" class="text-white text-decoration-underline">Instagram</a>
+                        </p>
+                        <br>
+                        <p class="mb-0 text-white">&copy; 2025 Website Kami. All rights reserved.</p>
                     </div>
-                    <br>
-                    <p class="mb-0 text-white">&copy; 2025 Website Kami. All rights reserved.</p>
                 </footer>
-            </div>
+            
         </div>
     </div>
    
